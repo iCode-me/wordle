@@ -3,39 +3,415 @@
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: 'Clear Sans', 'Helvetica Neue', Arial, sans-serif;
+}
+
+header h1 {
+  text-align: center;
+  font-size: 35px;
 }
 
 main .container {
+  padding-top: 150px;
+  margin: 0 auto;
+  width: 320px;
+  height: 380px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-gap: 5px;
+      grid-template-areas: "box0 box1 box2 box3 box4" "box5 box6 box7 box8 box9" "box10 box11 box12 box13 box14" "box15 box16 box17 box18 box19" "box20 box21 box22 box23 box24" "box25 box26 box27 box28 box29";
 }
 
 main .box {
-  border: 1px solid black;
+  border: 2px solid #d3d6da;
   width: 60px;
   height: 60px;
   margin: 0 auto;
 }
 
+#box0 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: box0;
+}
+
+#box1 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: box1;
+}
+
+#box2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: box2;
+}
+
+#box3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: box3;
+}
+
+#box4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: box4;
+}
+
+#box5 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: box5;
+}
+
+#box6 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: box6;
+}
+
+#box7 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: box7;
+}
+
+#box8 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: box8;
+}
+
+#box9 {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  grid-area: box9;
+}
+
+#box10 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: box10;
+}
+
+#box11 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: box11;
+}
+
+#box12 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: box12;
+}
+
+#box13 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: box13;
+}
+
+#box14 {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: box14;
+}
+
+#box15 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: box15;
+}
+
+#box16 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: box16;
+}
+
+#box17 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 3;
+  grid-area: box17;
+}
+
+#box18 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 4;
+  grid-area: box18;
+}
+
+#box19 {
+  -ms-grid-row: 4;
+  -ms-grid-column: 5;
+  grid-area: box19;
+}
+
+#box20 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: box20;
+}
+
+#box21 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: box21;
+}
+
+#box22 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 3;
+  grid-area: box22;
+}
+
+#box23 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 4;
+  grid-area: box23;
+}
+
+#box24 {
+  -ms-grid-row: 5;
+  -ms-grid-column: 5;
+  grid-area: box24;
+}
+
+#box25 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: box25;
+}
+
+#box26 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: box26;
+}
+
+#box27 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 3;
+  grid-area: box27;
+}
+
+#box28 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 4;
+  grid-area: box28;
+}
+
+#box29 {
+  -ms-grid-row: 6;
+  -ms-grid-column: 5;
+  grid-area: box29;
+}
+
 footer .keyboard-container {
+  padding-top: 125px;
+  margin: 0 auto;
   margin-top: 200px;
+  width: 500px;
+  height: 200px;
   display: -ms-grid;
   display: grid;
+  grid-gap: 5px;
   -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
   -ms-grid-rows: 1fr 1fr 1fr;
       grid-template-rows: 1fr 1fr 1fr;
+      grid-template-areas: "q w e r t y u i o p" "a s d f g h j k l ." "enter z x c v b n m back .";
 }
 
 footer .key-box {
-  border: 1px solid black;
-  width: 40px;
-  height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  border: 1px solid #d3d6da;
+  border-radius: 5px;
+  width: 45px;
+  height: 60px;
   margin: 0 auto;
-  text-align: center;
+}
+
+#q {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: q;
+}
+
+#w {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: w;
+}
+
+#e {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: e;
+}
+
+#r {
+  -ms-grid-row: 1;
+  -ms-grid-column: 4;
+  grid-area: r;
+}
+
+#t {
+  -ms-grid-row: 1;
+  -ms-grid-column: 5;
+  grid-area: t;
+}
+
+#y {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: y;
+}
+
+#u {
+  -ms-grid-row: 1;
+  -ms-grid-column: 7;
+  grid-area: u;
+}
+
+#i {
+  -ms-grid-row: 1;
+  -ms-grid-column: 8;
+  grid-area: i;
+}
+
+#o {
+  -ms-grid-row: 1;
+  -ms-grid-column: 9;
+  grid-area: o;
+}
+
+#p {
+  -ms-grid-row: 1;
+  -ms-grid-column: 10;
+  grid-area: p;
+}
+
+#a {
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: a;
+}
+
+#s {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: s;
+}
+
+#d {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: d;
+}
+
+#f {
+  -ms-grid-row: 2;
+  -ms-grid-column: 4;
+  grid-area: f;
+}
+
+#g {
+  -ms-grid-row: 2;
+  -ms-grid-column: 5;
+  grid-area: g;
+}
+
+#h {
+  -ms-grid-row: 2;
+  -ms-grid-column: 6;
+  grid-area: h;
+}
+
+#j {
+  -ms-grid-row: 2;
+  -ms-grid-column: 7;
+  grid-area: j;
+}
+
+#k {
+  -ms-grid-row: 2;
+  -ms-grid-column: 8;
+  grid-area: k;
+}
+
+#l {
+  -ms-grid-row: 2;
+  -ms-grid-column: 9;
+  grid-area: l;
+}
+
+#enter {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: enter;
+}
+
+#z {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  grid-area: z;
+}
+
+#x {
+  -ms-grid-row: 3;
+  -ms-grid-column: 3;
+  grid-area: x;
+}
+
+#c {
+  -ms-grid-row: 3;
+  -ms-grid-column: 4;
+  grid-area: c;
+}
+
+#v {
+  -ms-grid-row: 3;
+  -ms-grid-column: 5;
+  grid-area: v;
+}
+
+#b {
+  -ms-grid-row: 3;
+  -ms-grid-column: 6;
+  grid-area: b;
+}
+
+#n {
+  -ms-grid-row: 3;
+  -ms-grid-column: 7;
+  grid-area: n;
+}
+
+#m {
+  -ms-grid-row: 3;
+  -ms-grid-column: 8;
+  grid-area: m;
+}
+
+#back {
+  -ms-grid-row: 3;
+  -ms-grid-column: 9;
+  grid-area: back;
 }
 /*# sourceMappingURL=style.css.map */

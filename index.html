@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Wordle Game</title>
    <link rel="stylesheet" href="style.css">
+   <script src="app.js" async defer></script>
 </head>
 <body>
   <header>
@@ -14,69 +15,69 @@
  
   <main>
     <div class="container">
-      <div class="box" id="0"></div>
-      <div class="box" id="1"></div>
-      <div class="box" id="2"></div>
-      <div class="box" id="3"></div>
-      <div class="box" id="4"></div>
-      <div class="box" id="5"></div>
-      <div class="box" id="6"></div>
-      <div class="box" id="7"></div>
-      <div class="box" id="8"></div>
-      <div class="box" id="9"></div>
-      <div class="box" id="10"></div>
-      <div class="box" id="11"></div>
-      <div class="box" id="12"></div>
-      <div class="box" id="13"></div>
-      <div class="box" id="14"></div>
-      <div class="box" id="15"></div>
-      <div class="box" id="16"></div>
-      <div class="box" id="17"></div>
-      <div class="box" id="18"></div>
-      <div class="box" id="19"></div>
-      <div class="box" id="20"></div>
-      <div class="box" id="21"></div>
-      <div class="box" id="22"></div>
-      <div class="box" id="23"></div>
-      <div class="box" id="24"></div>
-      <div class="box" id="25"></div>
-      <div class="box" id="26"></div>
-      <div class="box" id="27"></div>
-      <div class="box" id="28"></div>
-      <div class="box" id="29"></div>
+      <div class="box" id="box0"></div>
+      <div class="box" id="box1"></div>
+      <div class="box" id="box2"></div>
+      <div class="box" id="box3"></div>
+      <div class="box" id="box4"></div>
+      <div class="box" id="box5"></div>
+      <div class="box" id="box6"></div>
+      <div class="box" id="box7"></div>
+      <div class="box" id="box8"></div>
+      <div class="box" id="box9"></div>
+      <div class="box" id="box10"></div>
+      <div class="box" id="box11"></div>
+      <div class="box" id="box12"></div>
+      <div class="box" id="box13"></div>
+      <div class="box" id="box14"></div>
+      <div class="box" id="box15"></div>
+      <div class="box" id="box16"></div>
+      <div class="box" id="box17"></div>
+      <div class="box" id="box18"></div>
+      <div class="box" id="box19"></div>
+      <div class="box" id="box20"></div>
+      <div class="box" id="box21"></div>
+      <div class="box" id="box22"></div>
+      <div class="box" id="box23"></div>
+      <div class="box" id="box24"></div>
+      <div class="box" id="box25"></div>
+      <div class="box" id="box26"></div>
+      <div class="box" id="box27"></div>
+      <div class="box" id="box28"></div>
+      <div class="box" id="box29"></div>
     </div>
   </main>
 
   <footer>
     <div class="keyboard-container">
-      <div class = "key-box" id="zero">Q</div>
-      <div class = "key-box" id="one">W</div>
-      <div class = "key-box" id="two">E</div>
-      <div class = "key-box" id="three">R</div>
-      <div class = "key-box" id="four">T</div>
-      <div class = "key-box" id="five">Y</div>
-      <div class = "key-box" id="six">U</div>
-      <div class = "key-box" id="seven">I</div>
-      <div class = "key-box" id="eight">O</div>
-      <div class = "key-box" id="nine">P</div>
-      <div class = "key-box" id="ten">A</div>
-      <div class = "key-box" id="eleven">S</div>
-      <div class = "key-box" id="twelve">D</div>
-      <div class = "key-box" id="thirteen">F</div>
-      <div class = "key-box" id="fourteen">G</div>
-      <div class = "key-box" id="fifteen">H</div>
-      <div class = "key-box" id="sixteen">J</div>
-      <div class = "key-box" id="seventeen">K</div>
-      <div class = "key-box" id="eighteen">L</div>
-      <div class = "key-box" id="nineteen">ENTER</div>
-      <div class = "key-box" id="twenty">Z</div>
-      <div class = "key-box" id="twentyone">X</div>
-      <div class = "key-box" id="twentytwo">C</div>
-      <div class = "key-box" id="twentythree">V</div>
-      <div class = "key-box" id="twentythree">B</div>
-      <div class = "key-box" id="twentyfour">N</div>
-      <div class = "key-box" id="twentyfive">M</div>
-      <div class = "key-box" id="twentysix">BACK</div>
+      <div class = "key-box" id="q">Q</div>
+      <div class = "key-box" id="w">W</div>
+      <div class = "key-box" id="e">E</div>
+      <div class = "key-box" id="r">R</div>
+      <div class = "key-box" id="t">T</div>
+      <div class = "key-box" id="y">Y</div>
+      <div class = "key-box" id="u">U</div>
+      <div class = "key-box" id="i">I</div>
+      <div class = "key-box" id="o">O</div>
+      <div class = "key-box" id="p">P</div>
+      <div class = "key-box" id="a">A</div>
+      <div class = "key-box" id="s">S</div>
+      <div class = "key-box" id="d">D</div>
+      <div class = "key-box" id="f">F</div>
+      <div class = "key-box" id="g">G</div>
+      <div class = "key-box" id="h">H</div>
+      <div class = "key-box" id="j">J</div>
+      <div class = "key-box" id="k">K</div>
+      <div class = "key-box" id="l">L</div>
+      <div class = "key-box" id="enter">ENTER</div>
+      <div class = "key-box" id="z">Z</div>
+      <div class = "key-box" id="x">X</div>
+      <div class = "key-box" id="c">C</div>
+      <div class = "key-box" id="v">V</div>
+      <div class = "key-box" id="b">B</div>
+      <div class = "key-box" id="n">N</div>
+      <div class = "key-box" id="m">M</div>
+      <div class = "key-box" id="back">BACK</div>
     </div>
   </footer>
 </body>
