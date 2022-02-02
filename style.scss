@@ -106,7 +106,7 @@ header {
       background-color: $box-color;
       cursor: pointer;
       border-radius: 4px;
-      }   
+      }  
 
     .key-wide {
       flex-grow: 1.5;
@@ -118,98 +118,6 @@ header {
 
   }  
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//   footer {
-//     .keyboard-container {
-//       padding-top: 125px;
-//       margin: 0 auto;
-//       margin-top: 200px;
-//       width: 500px;
-//       height: 200px;
-//       display: grid;
-//       grid-gap: 5px;
-//       grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-//       grid-template-rows: 1fr 1fr 1fr;
-//       grid-template-areas: 
-//       "q w e r t y u i o p"
-//       "a s d f g h j k l ."
-//       "enter z x c v b n m back ."
-//     }
-    
-//     .key-box {
-//       display: flex;
-//       font-size: 13px;
-//       align-items: center;
-//       justify-content: center;
-//       border: 1px solid $box-color;
-//       border-radius: 5px;
-//       width: 45px;
-//       height: 60px;
-//       margin: 0 auto;
-//     }
-
-//     .enter-key {
-//       border: 1px solid $box-color;
-//       border-radius: 5px;
-//       width: 45px;
-//       height: 60px;
-//     }
-
-//     .back-key {
-//       border: 1px solid $box-color;
-//       border-radius: 5px;
-//       width: 45px;
-//       height: 60px;
-//     }
-// }
-
-// // Keyboard grid area
-// #q {grid-area: q;}
-// #w {grid-area: w;}
-// #e {grid-area: e;}
-// #r {grid-area: r;}
-// #t {grid-area: t;}
-// #y {grid-area: y;}
-// #u {grid-area: u;}
-// #i {grid-area: i;}
-// #o {grid-area: o;}
-// #p {grid-area: p;}
-// #a {grid-area: a;}
-// #s {grid-area: s;}
-// #d {grid-area: d;}
-// #f {grid-area: f;}
-// #g {grid-area: g;}
-// #h {grid-area: h;}
-// #j {grid-area: j;}
-// #k {grid-area: k;}
-// #l {grid-area: l;}
-// #enter {grid-area: enter;}
-// #z {grid-area: z;}
-// #x {grid-area: x;}
-// #c {grid-area: c;}
-// #v {grid-area: v;}
-// #b {grid-area: b;}
-// #n {grid-area: n;}
-// #m {grid-area: m;}
-// #back {grid-area: back;}
 
 
 
