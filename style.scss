@@ -12,7 +12,8 @@
 header {
   h1 {
    text-align: center;
-   font-size: 35px;
+   font-size: 37px;
+   letter-spacing: 3px;
   }
 }
 
@@ -44,6 +45,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
+    font-size: 2em;
     font-weight: bold;
     }
   }
