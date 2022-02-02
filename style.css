@@ -247,6 +247,20 @@ footer .key-box {
   margin: 0 auto;
 }
 
+footer .enter-key {
+  border: 1px solid #d3d6da;
+  border-radius: 5px;
+  width: 45px;
+  height: 60px;
+}
+
+footer .back-key {
+  border: 1px solid #d3d6da;
+  border-radius: 5px;
+  width: 45px;
+  height: 60px;
+}
+
 #q {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
