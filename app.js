@@ -5,13 +5,14 @@ const enter = document.getElementById("enter");
 let newArr = [];
 const correctWord = "RIGHT";
 
+
+
 key.forEach(item => {
   item.addEventListener("click", event => {
     for (let i = 0; i < 5; i++) {
       if (box[i].innerHTML === "") {
         box[i].innerHTML = event.target.innerHTML;
         newArr.push(event.target.innerHTML);
-        console.log(newArr);
         return;
       }
     }
@@ -19,23 +20,24 @@ key.forEach(item => {
 })
 
 enter.addEventListener("click", event => {
-  let attemptWord = newArr.join("");
- 
-  if ( attemptWord === correctWord) {
-    alert("You have won!!!");
-  } else {
-    key.forEach(item => {
-      item.addEventListener("click", event => {
-        for (let i = 5; i < 10; i++) {
-          if (box[i].innerHTML === "") {
-            box[i].innerHTML = event.target.innerHTML;
-            newArr.push(event.target.innerHTML);
-            return;
+    let attemptedWord = newArr.join("");
+  
+    if ( attemptedWord === correctWord) {
+      alert("You have won!!!");
+    } else {
+      let newArr = [];
+      key.forEach(item => {
+        item.addEventListener("click", event => {
+          for (let i = 5; i < 10; i++) {
+            if (box[i].innerHTML === "") {
+              box[i].innerHTML = event.target.innerHTML;
+              newArr.push(event.target.innerHTML);
+              return;
+            }
           }
-        }
+        })
       })
-    })
-  }
+    }
 })
 
 
