@@ -11,11 +11,36 @@ key.forEach(item => {
       if (box[i].innerHTML === "") {
         box[i].innerHTML = event.target.innerHTML;
         newArr.push(event.target.innerHTML);
+        console.log(newArr);
         return;
       }
     }
   })
 })
+
+enter.addEventListener("click", event => {
+  let attemptWord = newArr.join("");
+ 
+  if ( attemptWord === correctWord) {
+    alert("You have won!!!");
+  } else {
+    key.forEach(item => {
+      item.addEventListener("click", event => {
+        for (let i = 5; i < 10; i++) {
+          if (box[i].innerHTML === "") {
+            box[i].innerHTML = event.target.innerHTML;
+            newArr.push(event.target.innerHTML);
+            return;
+          }
+        }
+      })
+    })
+  }
+})
+
+
+
+
 
 
 
