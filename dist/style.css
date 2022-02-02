@@ -171,6 +171,18 @@ footer .key-box {
   height: 60px;
   margin: 0 auto;
 }
+footer .enter-key {
+  border: 1px solid #d3d6da;
+  border-radius: 5px;
+  width: 45px;
+  height: 60px;
+}
+footer .back-key {
+  border: 1px solid #d3d6da;
+  border-radius: 5px;
+  width: 45px;
+  height: 60px;
+}
 
 #q {
   grid-area: q;

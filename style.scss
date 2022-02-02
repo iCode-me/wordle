@@ -16,7 +16,6 @@ header {
   }
 }
 
-
 // Game box styling
   main {
   
@@ -106,6 +105,20 @@ header {
       width: 45px;
       height: 60px;
       margin: 0 auto;
+    }
+
+    .enter-key {
+      border: 1px solid $box-color;
+      border-radius: 5px;
+      width: 45px;
+      height: 60px;
+    }
+
+    .back-key {
+      border: 1px solid $box-color;
+      border-radius: 5px;
+      width: 45px;
+      height: 60px;
     }
 }
 
