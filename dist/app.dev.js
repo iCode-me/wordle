@@ -11,24 +11,26 @@ key.forEach(function (item) {
       if (box[i].innerHTML === "") {
         box[i].innerHTML = event.target.innerHTML;
         newArr.push(event.target.innerHTML);
-        console.log(newArr);
         return;
       }
     }
   });
 });
 enter.addEventListener("click", function (event) {
-  var attemptWord = newArr.join("");
+  var attemptedWord = newArr.join("");
 
-  if (attemptWord === correctWord) {
+  if (attemptedWord === correctWord) {
     alert("You have won!!!");
   } else {
+    var _newArr = [];
     key.forEach(function (item) {
       item.addEventListener("click", function (event) {
         for (var i = 5; i < 10; i++) {
           if (box[i].innerHTML === "") {
             box[i].innerHTML = event.target.innerHTML;
-            newArr.push(event.target.innerHTML);
+
+            _newArr.push(event.target.innerHTML);
+
             return;
           }
         }
