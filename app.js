@@ -6,7 +6,6 @@ let newArr = [];
 const correctWord = "RIGHT";
 
 
-
 key.forEach(item => {
   item.addEventListener("click", event => {
     for (let i = 0; i < 5; i++) {
