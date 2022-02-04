@@ -1,23 +1,11 @@
 const key = document.querySelectorAll(".key-box");
 const box = document.querySelectorAll(".box");
 const enter = document.getElementById("enter");
+// const backSpace = document.querySelector("back");
 
 let newArr = [];
 const correctWord = "RIGHT";
-
 let counter = 0;
-
-key.forEach((item) => {
-  item.addEventListener("click", (event) => {
-    for (let i = 0; i < 5; i++) {
-      if (box[i].innerHTML === "") {
-        box[i].innerHTML = event.target.innerHTML;
-        newArr.push(event.target.innerHTML);
-        return;
-      }
-    }
-  });
-});
 
 const guessWord = (firstNum, lastNum) => {
   newArr.length = 0;
@@ -33,29 +21,40 @@ const guessWord = (firstNum, lastNum) => {
     })
   })
 }
+
+guessWord(0,5);
+
 enter.addEventListener("click", (event) => {
-
-
+  
   let attemptedWord = newArr.join("")
 
+  if(attemptedWord.length !==5) {
+    alert("Not enough letters!")
+    return;
+  }
+    
   if (attemptedWord === correctWord) {
-    alert("You have won!!!");
+    alert("Congratulations.. You have won!!!");
   } else { counter++
-      if (counter===1) {
+      if (counter === 1) {
         guessWord(5,10);
-      } else if (counter===2) {
+      } else if (counter === 2) {
         guessWord(10,15);
-      } else if (counter===3) {
+      } else if (counter === 3) {
         guessWord(15,20)
-      } else if (counter===4){
+      } else if (counter === 4){
         guessWord(20,25)
-      } else if (counter===5){
+      } else if (counter === 5){
         guessWord(25,30)
       } else {
-        alert("The game has ended");
+        alert(`No more moves left. The correct word is "${correctWord}".`);
       }
     };
   })
+  
+  // backSpace.addEventListener("click",(event) => {
+    
+  // })
   
 
 
