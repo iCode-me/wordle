@@ -2,30 +2,38 @@
 
 var key = document.querySelectorAll(".key-box");
 var box = document.querySelectorAll(".box");
-var enter = document.getElementById("enter"); // const backSpace = document.querySelector("back");
-
-var newArr = [];
+var enter = document.getElementById("enter");
+var backSpace = document.getElementById("back");
+var newWordArr = [];
 var correctWord = "RIGHT";
+var correctWordArr = correctWord.split('');
 var counter = 0;
 
 var guessWord = function guessWord(firstNum, lastNum) {
-  newArr.length = 0;
+  newWordArr.length = 0;
   key.forEach(function (item) {
     item.addEventListener("click", function (event) {
       for (var i = firstNum; i < lastNum; i++) {
         if (box[i].innerHTML === "") {
           box[i].innerHTML = event.target.innerHTML;
-          newArr.push(event.target.innerHTML);
+          newWordArr.push(event.target.innerHTML);
           return;
         }
       }
     });
   });
-};
+}; // const backSpaceClick = () => backSpace.addEventListener("click", (event) => { 
+//   for (let i = 0; i < box.length; i++) { 
+//     box[i].innerHTML = "";
+//   }
+// })
+// backSpaceClick();
+
 
 guessWord(0, 5);
 enter.addEventListener("click", function (event) {
-  var attemptedWord = newArr.join("");
+  backgroundColor();
+  var attemptedWord = newWordArr.join("");
 
   if (attemptedWord.length !== 5) {
     alert("Not enough letters!");
@@ -53,8 +61,35 @@ enter.addEventListener("click", function (event) {
   }
 
   ;
-}); // backSpace.addEventListener("click",(event) => {
-// })
+});
+
+var backgroundColor = function backgroundColor() {
+  box.forEach(function (tile, index) {
+    var boxLetter = tile.textContent;
+
+    if (boxLetter === correctWord[index]) {
+      tile.classList.add("greenColor");
+    } else if (correctWord.includes(boxLetter)) {
+      tile.classList.add("yellowColor");
+    } else {
+      tile.classList.add("greyColor");
+    }
+  });
+}; //             if (correctWordArr[i] === (newWordArr[i]) && newWordArr === (newWordArr.slice(0, row.indexOf(newWordArr[i]-1))[i])) {
+//                 box[i+counter].style.backgroundColor = "transparant"    
+//                 }
+//         } else if (correctWordArr.includes(newWordArr[i])) {
+//             box[i+count].style.backgroundColor = "yellow"
+//             console.log("includes letter");
+//             if (correctWordArr.includes(newWordArr[i]) && newWordArr.includes(newWordArr.slice(0, newWordArr.indexOf(newWordArr[i]-1))[i])) {
+//                 box[i+count].style.backgroundColor = "transparant"
+//         } else {
+//             console.log( "doesn't include letter")
+//         }
+//     }
+//     }
+//     count += 5;
+// }
 // When any letter key from the keyboard is pressed then it should be displayed on the game box starting from the left and moving horizontally up to five numbers.
 // After enter is pressed it should move to the next row if all the letters don't match the correct word.
 // After the sixth try if all the letters don't match then the correct word would be displayed
