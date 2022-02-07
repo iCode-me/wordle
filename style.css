@@ -12,6 +12,22 @@ header h1 {
   letter-spacing: 3px;
 }
 
+header .heading {
+  text-align: center;
+  border-bottom: 1px solid #cecdcd;
+  width: 500px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 main .container {
   padding-top: 150px;
   margin: 0 auto;
