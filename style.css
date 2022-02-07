@@ -284,4 +284,19 @@ main .box {
       -ms-flex-positive: 0.5;
           flex-grow: 0.5;
 }
+
+.greenColor {
+  background-color: #6aaa64 !important;
+  border: none !important;
+}
+
+.yellowColor {
+  background-color: #c9b458 !important;
+  border: none !important;
+}
+
+.greyColor {
+  background-color: #86888a !important;
+  border: none !important;
+}
 /*# sourceMappingURL=style.css.map */
