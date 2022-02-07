@@ -25,7 +25,6 @@ Features
 
 Known Bugs
 
-- After the first guess, the yellow color spills to the other tiles.
 - Green color is only displayed on the first row of letters.
 - Backspace key is not functioning.
 
