@@ -10,6 +10,15 @@ header h1 {
   font-size: 37px;
   letter-spacing: 3px;
 }
+header .heading {
+  text-align: center;
+  border-bottom: 1px solid #cecdcd;
+  width: 500px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 main .container {
   padding-top: 150px;
